@@ -1,0 +1,7 @@
+# Economy Mod Configuration File
+
+# Starting balance for new players (set to 0 for no starting balance)
+starting_balance=100.0
+
+# The OP level required to use economy commands (default is 4)
+op_level_required=4

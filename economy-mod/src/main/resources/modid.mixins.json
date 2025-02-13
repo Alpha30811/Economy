@@ -1,11 +1,14 @@
 {
 	"required": true,
-	"package": "com.example.mixin",
-	"compatibilityLevel": "JAVA_21",
+	"minVersion": "0.8",
+	"package": "com.alpha30811.economy.mixin",
 	"mixins": [
-		"ExampleMixin"
+	  "PlayerEntityMixin"
 	],
+	"client": [],
+	"server": [],
 	"injectors": {
-		"defaultRequire": 1
+	  "defaultRequire": 1
 	}
-}
+  }
+  

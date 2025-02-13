@@ -3,22 +3,26 @@
   "id": "economy",
   "version": "1.0.0",
   "name": "Economy Mod",
-  "description": "A Fabric economy mod.",
+  "description": "A simple economy system for Minecraft servers.",
   "authors": ["Alpha30811"],
   "contact": {
     "homepage": "https://github.com/Alpha30811/Economy",
     "sources": "https://github.com/Alpha30811/Economy"
   },
   "license": "MIT",
-  "environment": "*",
+  "environment": "server",
   "entrypoints": {
     "main": [
       "com.alpha30811.economy.EconomyMod"
     ]
   },
+  "mixins": [
+    "economy.mixins.json"
+  ],
+  "icon": "assets/economy/icon.png",
   "depends": {
-    "fabricloader": ">=0.14.22",
-    "fabric-api": ">=0.89.2+1.20.1",
-    "minecraft": "1.20.1"
+    "fabricloader": ">=0.14.21",
+    "minecraft": "1.20.1",
+    "fabric-command-api-v2": "*"
   }
 }
